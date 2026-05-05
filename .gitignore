@@ -1,0 +1,14 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+*.nupkg
+TestResults/
+coverage/
+
+## OS
+.DS_Store
+Thumbs.db
