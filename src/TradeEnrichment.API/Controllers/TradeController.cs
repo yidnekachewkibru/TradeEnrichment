@@ -45,8 +45,8 @@ public sealed class TradeController : ControllerBase
         try
         {
             enriched = await _mediator.Send(
-                new EnrichTradesCommand(Request.Body, requestContentType, cancellationToken),
-                cancellationToken);
+    new EnrichTradesCommand(Request.Body, requestContentType),
+    cancellationToken);
         }
         catch (NotSupportedException ex)
         {

@@ -5,6 +5,5 @@ namespace TradeEnrichment.Application.Commands;
 
 public sealed record EnrichTradesCommand(
     Stream InputStream,
-    string ContentType,
-    CancellationToken CancellationToken = default
+    string ContentType
 ) : IRequest<IAsyncEnumerable<EnrichedTrade>>;
