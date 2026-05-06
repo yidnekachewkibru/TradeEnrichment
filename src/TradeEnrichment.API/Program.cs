@@ -19,6 +19,7 @@ builder.Services.AddSingleton<ITradeParser, XmlTradeParser>();
 
 builder.Services.AddSingleton<ITradeSerializer, CsvTradeSerializer>();
 builder.Services.AddSingleton<ITradeSerializer, JsonTradeSerializer>();
+builder.Services.AddSingleton<ITradeSerializer, XmlTradeSerializer>();
 
 var productCsvPath = builder.Configuration["ProductCsvPath"]
     ?? Path.Combine(AppContext.BaseDirectory, "data", "product.csv");
