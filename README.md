@@ -28,7 +28,7 @@ A microservice that enriches trade records by resolving `productId` → `product
 
 ```bash
 # 1. Clone the repository
-git clone <repo-url> && cd TradeEnrichment
+git clone https://github.com/yidnekachewkibru/TradeEnrichment.git && cd TradeEnrichment
 
 # 2. Restore NuGet packages
 dotnet restore
